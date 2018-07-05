@@ -6,7 +6,8 @@ tong = ori_tong
 
 count = 0
 
-while count < 8:
+print(ori_tong)
+while count < 5:
     n = int(input("Whats your number?"))
     tong += n
     if tong < 100:
@@ -18,5 +19,5 @@ while count < 8:
         break
     count += 1
 
-if count == 8:
-    print("You've lost!")
+    if count == 8:
+        print("You've lost!")
