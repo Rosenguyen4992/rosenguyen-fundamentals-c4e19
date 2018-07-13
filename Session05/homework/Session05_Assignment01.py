@@ -1,5 +1,5 @@
 inventory = {
-    'gold' : ['500'],
+    'gold' : 500,
     'pouch' : ['flint', 'twine', 'gemstone'],
     'backpack' : ['xylophone', 'dragger', 'bedroll', 'bread loaf']
 }
@@ -12,6 +12,7 @@ print (inventory)
 inventory['backpack'].remove('dragger')
 print (inventory)
 
-# Add 50 to the number stored under the 'gold' key
-inventory['gold'].append("30")
+# Add 50 to the number stored under the 'gold' key 
+update_gold = inventory['gold'] + 50
+inventory['gold'] = update_gold
 print (inventory)
